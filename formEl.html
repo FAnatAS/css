@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form elements</title>
+  <link rel="stylesheet" href="formEl.css">
+</head>
+
+<body>
+<div class="container">
+    <h2>Стили элементов формы:</h2>
+      
+	<p>:required</p>
+	<form action="">     
+		<input type="text" required>
+		<span class="hint"></span>
+    </form>
+    
+	<p>:optional</p>
+	<form action="">
+		<input type="text" id="optional">
+		<span class="hint"></span>
+	</form> 
+	
+	<p>:disabled</p>
+	<form action="">
+		<input type="text" value="Отключено" disabled="">
+	</form> 
+	
+	<p>:read-only</p>
+	<form action="">
+		<input type="text" id="readOnly" value="Только чтение" readonly>
+	</form>     
+            
+    <p>:placeholder-shown</p>
+	<form action="">  
+		<div class="formGroup">
+	    	<input type="text" id="shown" required placeholder="Введите текст">
+	        <label for="shown">Спасибо</label>
+	    </div>    
+	</form>
+ 
+      <p>:valid email</p>
+      <form action="">
+        <input type="email" id="validEmail" value="email@domen.com" required="">
+        <span class="hint"></span>
+      </form>
+    
+    
+      <p>:invalid email</p>
+      <form action="">
+        <input type="email" id="invalidEmail" value="email$domen.com" required="">
+        <span class="hint"></span>
+      </form>
+    
+    
+      <p>:valid number</p>
+      <form action="" class="form1">
+        <label for="inRange">Число от 1 до 10</label>
+        <input type="number" id="inRange" min="1" max="10" value="12" required="">
+      </form>
+    
+    
+	<p>:checked</p>
+	<form action="">
+		<div class="checkbox">
+			<input type="checkbox" name="checkbox" id="check1" value="yes" checked>
+			<label for="check1">
+	  			<span class="checkboxl">Согласен</span>
+			</label>
+		</div>
+		<div class="checkbox">
+			<input type="radio" name="radio" id="check2" value="1" checked>
+			<label for="check2">
+				<span class="checkboxl">Вариант 1</span>
+			</label>
+		</div>
+				<div class="checkbox">
+			<input type="radio" name="radio" id="check3" value="2" >
+			<label for="check3">
+				<span class="checkboxl">Вариант 2</span>
+			</label>
+		</div>
+	</form>
+	
+
+	<p>date</p>
+      <form action="" class="form1">
+        <label for="date">Выберите дату</label>
+        <input type="date" name="date" id="date" required>
+      </form>
+      
+	<p>file</p>
+      <form action="" class="form1">
+        <label for="file">Выберите изображение для загрузки</label>
+        <input type="file"  name="file" id="file" accept=".jpg, .jpeg, .png" required>
+      </form>
+      
+	<p>range</p>
+      <form action="" class="form1">
+        <input type="range" name="range"  id="range" min="0" max="100" step="10" value="30">
+      </form>
+      
+	<p>select</p>
+      <form action="">
+      	<div id="select">
+	        <select name="select">
+	          <option>Сделайте выбор</option>
+			  <option value="value1">Значение 1</option> 
+			  <option value="value2">Значение 2</option>
+			  <option value="value3">Значение 3</option>
+			  <option value="value4">Значение 4</option>
+			</select>
+		</div>
+      </form>
+	
+	
+</div>
+
+<script src="select.js"></script>
+
+</body>
+</html>

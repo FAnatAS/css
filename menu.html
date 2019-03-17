@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #d7dfe3;
+}
+.topnav ul{
+	list-style: none;
+} 
+.topnav ul li{
+	display: inline-block;
+} 
+.topnav ul li:hover{
+  background-color: #8ba3ad;
+ }
+.topnav a {
+  display: block;
+  color: #565656;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active{
+   background-color: #8ba3ad;
+}
+.active a{
+   color: white;
+}
+.topnav #icon {
+  display: none;
+}
+section{
+	padding: 2vh 2vw;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+
+  .topnav{
+  	width: 48px;
+  	height: 100vh;
+  	position: fixed;
+  	transition: all 0.5s linear;
+  }	
+  .topnav a {display: none;}
+  .topnav #icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive {
+  	width: 200px;
+  	transition: all 0.5s linear;
+  }
+  .topnav.responsive ul li{
+	display: block;
+	transition: all 0.5s linear;
+}
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+  section{
+	margin-left: 60px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topnav" id="topNav">
+<ul>
+  <li class="active"><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="javascript:void(0);" id="icon">
+    <i class="fa fa-bars"></i>
+  </a></li>
+</ul>
+</nav>
+
+
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam viverra orci sagittis eu volutpat odio facilisis. Ut venenatis tellus in metus. Tristique et egestas quis ipsum suspendisse. In hac habitasse platea dictumst vestibulum rhoncus. Amet cursus sit amet dictum. Sit amet nulla facilisi morbi tempus iaculis urna. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Id aliquet risus feugiat in ante metus. Lacus vestibulum sed arcu non. Dictumst quisque sagittis purus sit amet volutpat.</p>
+
+<p>Nulla facilisi morbi tempus iaculis urna id. Orci a scelerisque purus semper. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Amet est placerat in egestas erat imperdiet sed euismod. Aliquet sagittis id consectetur purus ut. Leo integer malesuada nunc vel risus. Enim sed faucibus turpis in eu mi bibendum. Lorem sed risus ultricies tristique nulla aliquet. Tincidunt vitae semper quis lectus nulla. Porta nibh venenatis cras sed. Et netus et malesuada fames ac. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Massa tincidunt dui ut ornare lectus. In mollis nunc sed id semper risus. Ac turpis egestas maecenas pharetra. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Morbi quis commodo odio aenean sed. Cras adipiscing enim eu turpis. Enim nunc faucibus a pellentesque sit.</p>
+
+<p>Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Ultricies mi quis hendrerit dolor magna eget est. Mauris ultrices eros in cursus turpis massa tincidunt. Senectus et netus et malesuada fames ac turpis. Pretium lectus quam id leo in vitae turpis. Eleifend mi in nulla posuere. Penatibus et magnis dis parturient montes nascetur. Et netus et malesuada fames ac turpis. Aliquet enim tortor at auctor urna nunc. Nunc id cursus metus aliquam eleifend mi in nulla. Tellus mauris a diam maecenas. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Sed cras ornare arcu dui vivamus. Lorem mollis aliquam ut porttitor leo a diam. Urna nunc id cursus metus aliquam eleifend.</p>
+
+<p>Massa massa ultricies mi quis hendrerit dolor magna. Nibh tellus molestie nunc non blandit massa enim nec. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Enim facilisis gravida neque convallis a cras semper auctor neque. Dictum varius duis at consectetur lorem donec. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Ultrices neque ornare aenean euismod elementum nisi quis. At lectus urna duis convallis convallis tellus. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Amet est placerat in egestas. Nec feugiat nisl pretium fusce. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Bibendum enim facilisis gravida neque convallis a cras. Nibh tellus molestie nunc non blandit massa. Sed faucibus turpis in eu.</p>
+
+<p>Facilisi cras fermentum odio eu feugiat pretium. Viverra justo nec ultrices dui sapien eget mi. A lacus vestibulum sed arcu non odio. Condimentum mattis pellentesque id nibh tortor id aliquet. Vitae et leo duis ut diam quam nulla porttitor. Aliquet eget sit amet tellus cras adipiscing enim eu. At in tellus integer feugiat. Ipsum dolor sit amet consectetur adipiscing elit. Ultrices neque ornare aenean euismod. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Ut etiam sit amet nisl purus in mollis nunc.</p>
+	</section>
+
+
+<script>
+
+
+
+var elIcon = document.getElementById("icon");
+elIcon.addEventListener("click",function (){
+  var el = document.getElementById("topNav");
+  if (el.className === "topnav") {
+    el.classList.add("responsive");
+    this.children[0].classList.remove("fa-bars");
+    this.children[0].classList.add("fa-times");
+  } else {
+    el.classList.remove("responsive");
+    this.children[0].classList.remove("fa-times");
+    this.children[0].classList.add("fa-bars");
+  }
+  event.preventDefault();
+});
+
+</script>
+
+</body>
+</html>
